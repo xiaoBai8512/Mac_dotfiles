@@ -1,0 +1,6 @@
+[submodule "shikun_dotfiles"]
+	path = shikun_dotfiles
+	url = ./shikun_dotfiles
+[submodule "powerlevel9k"]
+	path = powerlevel9k
+	url = ./powerlevel9k
