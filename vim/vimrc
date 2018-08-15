@@ -1,7 +1,0 @@
-" so ~/dotfiles/vim/autoload/*
-so ~/dotfiles/vim/init.vim
-so ~/dotfiles/vim/plugins.vim
-so ~/dotfiles/vim/configs.vim
-so ~/dotfiles/vim/autocmd.vim
-so ~/dotfiles/vim/keybindings.vim
-so ~/dotfiles/vim/plugins_after.vim
