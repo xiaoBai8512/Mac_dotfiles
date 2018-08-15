@@ -1,3 +1,4 @@
+export TERM="xterm-256color"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -106,3 +107,8 @@ POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir dir_writable vcs) # <= left prompt 设了 "dir"
 # command line 右边提示内容(状态、时间)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
+
+# nvm
+export NVM_DIR=$HOME/.nvm
+. /usr/local/opt/nvm/nvm.sh
+alias vim="mvim -v"
