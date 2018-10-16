@@ -1,0 +1,75 @@
+set-option -g default-terminal "screen-256color"
+set-option -g status on
+set-option -g status-interval 2
+set-option -g mouse on
+# rename window to reflect current program
+setw -g automatic-rename on
+setw -g xterm-keys on
+# increase repeat timeout
+set -sg repeat-time 600
+set-window-option -g mode-keys vi
+set -g status-right '#{battery_status_bg} Batt: #{battery_icon} #{battery_percentage} #{battery_remain} | %a %h-%d %H:%M '
+# automatically renumber tmux windows
+set -g renumber-windows on
+# Activity Monitoring
+setw -g monitor-activity off
+set -g visual-activity off
+# Rather than constraining window size to the maximum size of any client
+# connected to the *session*, constrain window size to the maximum size of any
+# client connected to *that window*. Much more reasonable.
+setw -g aggressive-resize on
+
+set-environment -g TMUX_PLUGIN_MANAGER_PATH '~/.tmux/plugins/'
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+set -g @plugin 'jimeh/tmux-themepack'
+set -g @plugin 'tmux-plugins/tmux-yank'
+set -g @plugin 'tmux-plugins/tmux-prefix-highlight'
+set -g @plugin 'tmux-plugins/tmux-sidebar'
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'tmux-plugins/tmux-continuum'
+set -g @plugin 'christoomey/vim-tmux-navigator'
+
+set -g @continuum-restore 'on'
+set-option -g set-titles on
+set-option -g set-titles-string "#T - #W"
+
+# more settings to make copy-mode more vim-like
+unbind [
+bind v copy-mode
+unbind p
+bind p paste-buffer
+# tile all windows
+unbind =
+bind = select-layout tiled
+# reload config file
+bind r source-file ~/.tmux.conf \; display "Config Reloaded!"
+
+bind C-c new-session
+
+# clear both screen and history
+bind C-l send-keys C-l \; run 'sleep 0.1' \; clear-history
+
+bind > swap-pane -D
+bind < swap-pane -U
+
+# pane resizing
+bind -r H resize-pane -L 2
+bind -r J resize-pane -D 2
+bind -r K resize-pane -U 2
+bind -r L resize-pane -R 2
+
+bind-key -T copy-mode-vi v send -X begin-selection
+bind-key -T copy-mode-vi y send-keys -X copy-pipe-and-cancel "pbcopy"
+bind-key -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel "pbcopy"
+bind-key -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel "pbcopy"
+
+# make delay shorter
+set -sg escape-time 0
+
+set -g base-index 1
+setw -g pane-base-index 1
+
+tmux_conf_new_pane_retain_current_path=true
+
+run '~/.tmux/plugins/tpm/tpm'
