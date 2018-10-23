@@ -1,0 +1,7 @@
+let g:VIMCONFIGDIR = $HOME . "/dotfiles/vim"
+
+exec "so " VIMCONFIGDIR . '/init.vim'
+exec "so " VIMCONFIGDIR . '/plugins.vim'
+exec "so " VIMCONFIGDIR . '/configs.vim'
+exec "so " VIMCONFIGDIR . '/autocmd.vim'
+exec "so " VIMCONFIGDIR . '/keybindings.vim'
