@@ -28,9 +28,9 @@ brew install git --HEAD
 brew install svn
 brew install nvm --HEAD
 brew install yarn --without-node
-# brew install rust --HEAD
+brew install rust --HEAD
 # brew install go --HEAD
-brew cask install XQuartz
+# brew cask install XQuartz
 brew install vim --with-override-system-vi --with-lua --HEAD
 brew install neovim
 # brew cask install oni
@@ -51,7 +51,7 @@ brew cask install font-sourcecodepro-nerd-font
 # brew tap d12frosted/emacs-plus
 # brew install emacs-plus
 
-ln -s -f /usr/local/Cellar/emacs-plus/26.1/Emacs.app /Applications
+# ln -s -f /usr/local/Cellar/emacs-plus/26.1/Emacs.app /Applications
 echo "Done!"
 
 echo "Pip install..."
