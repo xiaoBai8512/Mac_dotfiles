@@ -28,7 +28,7 @@ brew install git --HEAD
 brew install svn
 brew install nvm --HEAD
 brew install yarn --without-node
-brew install rust --HEAD
+# brew install rust --HEAD
 # brew install go --HEAD
 # brew cask install XQuartz
 brew install vim --with-override-system-vi --with-lua --HEAD
@@ -41,8 +41,8 @@ brew install ack --HEAD
 brew install ctags --HEAD
 brew install tree
 
-brew tap dart-lang/dart
-brew install dart
+# brew tap dart-lang/dart
+# brew install dart
 
 brew tap caskroom/fonts
 brew cask install font-robotomono-nerd-font
