@@ -1,4 +1,4 @@
-let g:VIMCONFIGDIR = $HOME . "/dotfiles/vim"
+let g:VIMCONFIGDIR = $HOME . "/Mac_dotfiles/vim"
 
 exec "so " VIMCONFIGDIR . '/init.vim'
 exec "so " VIMCONFIGDIR . '/plugins.vim'
