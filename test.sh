@@ -1,4 +1,7 @@
 #! /bin/zsh
 cd ~
-source ~/.nvm/nvm.sh
-nvm -v
+# brew reinstall nvm --HEAD
+# source /usr/local/opt/nvm/nvm.sh
+# nvm install --lts
+source $HOME/.zshrc
+tmux source $HOME/.tmux.conf

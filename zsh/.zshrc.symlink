@@ -11,7 +11,7 @@ alias n="nvim"
 alias v="vim"
 
 source $ZSH/oh-my-zsh.sh
-source ~/.nvm/nvm.sh
+source /usr/local/opt/nvm/nvm.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 plugins=(

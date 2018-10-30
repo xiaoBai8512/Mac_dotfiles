@@ -12,8 +12,8 @@ echo "Installing zshell..."
 brew install zsh --HEAD
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone https://github.com/bhilburn/powerlevel9k.git $HOME/.oh-my-zsh/custom/themes/powerlevel9k
-git clone https://github.com/zsh-users/zsh-autosuggestions  $HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions  $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
 chsh -s /bin/zsh `whoami`
 echo "Done!"
@@ -36,7 +36,7 @@ cd $HOME
 echo "brew install..."
 brew install git --HEAD
 brew install svn
-brew install nvm --HEAD
+brew reinstall nvm --HEAD
 brew install yarn --without-node
 brew install vim --with-override-system-vi --with-lua --HEAD
 brew install neovim
