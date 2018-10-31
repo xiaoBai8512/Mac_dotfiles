@@ -26,11 +26,6 @@ ln -s -f $DOTFILES/vim/.vimrc.symlink $HOME/.config/nvim/init.vim
 ln -s -f $DOTFILES/tmux/.tmux.conf.symlink $HOME/.tmux.conf
 echo "Done!"
 
-echo "Sourcing origin files"
-source $HOME/.zshrc
-tmux source $HOME/.tmux.conf
-echo "Done!"
-
 cd $HOME
 
 echo "brew install..."
@@ -52,6 +47,11 @@ brew cask install font-robotomono-nerd-font
 brew cask install font-sourcecodepro-nerd-font
 echo "Done!"
 
+echo "Sourcing origin files"
+source $HOME/.zshrc
+tmux source $HOME/.tmux.conf
+echo "Done!"
+
 echo "Pip install..."
 sudo easy_install pip
 pip install --upgrade --user pip
@@ -59,7 +59,7 @@ pip install --user scrapy autopep8
 echo "Done!"
 
 echo "Install Node"
-nvm install --lts
+nvm install 8.12.0
 npm config set registry https://registry.npm.taobao.org
 
 echo "Yarn install..."
