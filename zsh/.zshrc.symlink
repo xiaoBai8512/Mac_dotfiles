@@ -9,6 +9,7 @@ export ZSH=~/.oh-my-zsh
 alias m="mvim"
 alias n="nvim"
 alias v="vim"
+alias .="source"
 
 source /usr/local/opt/nvm/nvm.sh
 
