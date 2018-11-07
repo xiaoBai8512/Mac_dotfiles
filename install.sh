@@ -43,6 +43,7 @@ brew install ctags --HEAD
 brew install tree
 
 brew tap caskroom/fonts
+brew cask install font-hack-nerd-font
 brew cask install font-robotomono-nerd-font
 brew cask install font-sourcecodepro-nerd-font
 echo "Done!"
