@@ -26,11 +26,11 @@ Host github.com
 IdentityFile ~/.ssh/id_rsa_github
 
 # zhiku_test_aliyun
-Host zhiku_test
-HostName 39.105.23.129
-Port 22
-User root
-IdentityFile ~/.ssh/zhiku_id_rsa
+# Host zhiku_test
+# HostName 39.105.23.129
+# Port 22
+# User root
+# IdentityFile ~/.ssh/zhiku_id_rsa
 
 
 

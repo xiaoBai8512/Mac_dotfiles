@@ -31,7 +31,7 @@ cd $HOME
 echo "brew install..."
 brew install git --HEAD
 brew install svn
-brew reinstall nvm --HEAD
+brew install nvm --HEAD
 brew install yarn --without-node
 brew install vim --with-override-system-vi --with-lua --HEAD
 brew install neovim
