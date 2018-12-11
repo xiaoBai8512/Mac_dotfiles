@@ -42,4 +42,4 @@ POWERLEVEL9K_MODE='nerdfont-complete'
 # command line 左边提示内容(文件夹路径、文件夹读写状态、版本控制资讯)
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir dir_writable vcs) # <= left prompt 设了 "dir"
 # command line 右边提示内容(状态、时间)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)export PATH="/usr/local/bin:$PATH"
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)export PATH="/usr/local/bin:$PATH"export PATH="/usr/local/sbin:$PATH"

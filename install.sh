@@ -23,7 +23,7 @@ ln -s -f $DOTFILES/zsh/.zshrc.symlink $HOME/.zshrc
 ln -s -f $DOTFILES/vim/.vimrc.symlink $HOME/.vimrc
 mkdir -p $HOME/.config/nvim
 ln -s -f $DOTFILES/vim/.vimrc.symlink $HOME/.config/nvim/init.vim
-ln -s -f $DOTFILES/tmux/.tmux.conf.symlink $HOME/.tmux.conf
+# ln -s -f $DOTFILES/tmux/.tmux.conf.symlink $HOME/.tmux.conf
 echo "Done!"
 
 cd $HOME
