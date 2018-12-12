@@ -25,6 +25,10 @@ IdentityFile ~/.ssh/id_rsa_gitlab
 Host github.com
 IdentityFile ~/.ssh/id_rsa_github
 
+# gitee
+Host gitee.com
+IdentityFile ~/.ssh/id_rsa_gitee
+
 # zhiku_test_aliyun
 # Host zhiku_test
 # HostName 39.105.23.129
