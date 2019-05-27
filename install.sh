@@ -32,8 +32,9 @@ echo "brew install..."
 brew install git --HEAD
 brew install svn
 brew install nvm --HEAD
-brew install yarn --without-node
-brew install vim --with-override-system-vi --with-lua --HEAD
+brew install yarn --ignore-dependencies
+# brew install vim --with-override-system-vi --with-lua --HEAD
+brew install vim --HEAD
 brew install neovim
 brew cask install macvim
 brew install tmux --HEAD
@@ -46,6 +47,7 @@ brew tap caskroom/fonts
 brew cask install font-hack-nerd-font
 brew cask install font-robotomono-nerd-font
 brew cask install font-sourcecodepro-nerd-font
+brew cask install font-meslo-nerd-font font-meslo-nerd-font-mono font-mononoki-nerd-font 
 echo "Done!"
 
 echo "Sourcing origin files"
