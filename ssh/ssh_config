@@ -23,7 +23,7 @@ IdentityFile ~/.ssh/id_rsa_gitlab
 
 # github
 Host github.com
-IdentityFile ~/.ssh/id_rsa_github
+IdentityFile ~/.ssh/id_rsa
 
 # gitee
 Host gitee.com
