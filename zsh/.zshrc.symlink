@@ -1,3 +1,7 @@
+# proxy
+export http_proxy=socks5://127.0.0.1:1080
+export https_proxy=$http_proxy
+
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_MODE='awesome-fontconfig'
 EDITOR=nvim
@@ -16,20 +20,17 @@ source /usr/local/opt/nvm/nvm.sh
 plugins=(
 git
 tmux
-gitfast
-git-extras
+gitignore
 svn
 brew
-last-working-dir
-macports
 pip
-pod
 python
 zsh-autosuggestions
 zsh-syntax-highlighting
 node
 npm
 yarn
+vscode
 )
 
 source $ZSH/oh-my-zsh.sh
