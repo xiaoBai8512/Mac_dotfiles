@@ -1,8 +1,8 @@
 cd $HOME
 DOTFILES=$HOME/Mac_dotfiles
 
-export http_proxy=http://127.0.0.1:1087
-export https_proxy=http://127.0.0.1:1087
+export http_proxy=socks5://127.0.0.1:1080
+export https_proxy=$http_proxy
 
 echo "install brew!"
 brew update
@@ -32,18 +32,17 @@ echo "brew install..."
 brew install git --HEAD
 brew install svn
 brew install nvm --HEAD
-brew install yarn --ignore-dependencies
-# brew install vim --with-override-system-vi --with-lua --HEAD
+brew install yarn
 brew install vim --HEAD
 brew install neovim
-brew cask install macvim
+# brew cask install macvim
 brew install tmux --HEAD
 brew install fzf --HEAD
 brew install ack --HEAD
 brew install ctags --HEAD
 brew install tree
 
-brew tap caskroom/fonts
+brew tap homebrew/cask-fontss
 brew cask install font-hack-nerd-font
 brew cask install font-robotomono-nerd-font
 brew cask install font-sourcecodepro-nerd-font
@@ -63,10 +62,10 @@ echo "Done!"
 
 echo "Install Node"
 nvm install 8.12.0
-npm config set registry https://registry.npm.taobao.org
+# npm config set registry https://registry.npm.taobao.org
 
 echo "Yarn install..."
-yarn config set registry https://registry.npm.taobao.org
+# yarn config set registry https://registry.npm.taobao.org
 yarn global add nodemon pm2 neovim tern javascript-typescript-langserver vue-language-server vscode-css-languageserver-bin vscode-html-languageserver-bin eslint prettier-eslint prettier eslint-plugin-react eslint-plugin-vue typescript git+https://github.com/ramitos/jsctags.git flow-typed flow-bin husky
 echo "Done!"
 
