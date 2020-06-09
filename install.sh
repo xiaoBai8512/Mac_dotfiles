@@ -1,7 +1,13 @@
 cd $HOME
 DOTFILES=$HOME/Mac_dotfiles
 
-export http_proxy=socks5://127.0.0.1:1080
+# export http_proxy=socks5://127.0.0.1:1080
+# export https_proxy=$http_proxy
+# alias setproxy="export ALL_PROXY=socks5://127.0.0.1:1080"
+# alias unsetproxy="unset ALL_PROXY"
+# setproxy
+echo'set proxy'
+export http_proxy=http://127.0.0.1:1087
 export https_proxy=$http_proxy
 
 echo "install brew!"
@@ -42,6 +48,7 @@ brew install fzf --HEAD
 # brew install ack --HEAD
 # brew install ctags --HEAD
 brew install tree
+brew install reattach-to-user-namespace
 
 brew tap homebrew/cask-fonts
 brew cask install font-hack-nerd-font
