@@ -5,6 +5,7 @@ export http_proxy=socks5://127.0.0.1:1080
 export https_proxy=$http_proxy
 
 echo "install brew!"
+# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 brew update
 brew install wget
 
@@ -20,9 +21,9 @@ echo "Done!"
 
 echo "Linking Mac_dotfiles..."
 ln -s -f $DOTFILES/zsh/.zshrc.symlink $HOME/.zshrc
-ln -s -f $DOTFILES/vim/.vimrc.symlink $HOME/.vimrc
-mkdir -p $HOME/.config/nvim
-ln -s -f $DOTFILES/vim/.vimrc.symlink $HOME/.config/nvim/init.vim
+# ln -s -f $DOTFILES/vim/.vimrc.symlink $HOME/.vimrc
+# mkdir -p $HOME/.config/nvim
+# ln -s -f $DOTFILES/vim/.vimrc.symlink $HOME/.config/nvim/init.vim
 # ln -s -f $DOTFILES/tmux/.tmux.conf.symlink $HOME/.tmux.conf
 echo "Done!"
 
@@ -30,19 +31,19 @@ cd $HOME
 
 echo "brew install..."
 brew install git --HEAD
-brew install svn
+# brew install svn
 brew install nvm --HEAD
 brew install yarn
 brew install vim --HEAD
-brew install neovim
+# brew install neovim
 # brew cask install macvim
 brew install tmux --HEAD
 brew install fzf --HEAD
-brew install ack --HEAD
-brew install ctags --HEAD
+# brew install ack --HEAD
+# brew install ctags --HEAD
 brew install tree
 
-brew tap homebrew/cask-fontss
+brew tap homebrew/cask-fonts
 brew cask install font-hack-nerd-font
 brew cask install font-robotomono-nerd-font
 brew cask install font-sourcecodepro-nerd-font
@@ -54,14 +55,14 @@ source $HOME/.zshrc
 tmux source $HOME/.tmux.conf
 echo "Done!"
 
-echo "Pip install..."
-sudo easy_install pip
-pip install --upgrade --user pip
-pip install --user scrapy autopep8
-echo "Done!"
+# echo "Pip install..."
+# sudo easy_install pip
+# pip install --upgrade --user pip
+# pip install --user scrapy autopep8
+# echo "Done!"
 
 echo "Install Node"
-nvm install 8.12.0
+nvm install 8.16.4
 # npm config set registry https://registry.npm.taobao.org
 
 echo "Yarn install..."
@@ -71,11 +72,11 @@ echo "Done!"
 
 #Vim Plug
 #For vim
-echo "Install vim-plug"
-curl -fLo $HOME/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-#For neovim
-curl -fLo $HOME/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+# echo "Install vim-plug"
+# curl -fLo $HOME/.vim/autoload/plug.vim --create-dirs \
+#     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+# #For neovim
+# curl -fLo $HOME/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+#     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 echo "Done!"
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
