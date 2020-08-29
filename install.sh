@@ -6,12 +6,12 @@ DOTFILES=$HOME/Mac_dotfiles
 # alias setproxy="export ALL_PROXY=socks5://127.0.0.1:1080"
 # alias unsetproxy="unset ALL_PROXY"
 # setproxy
-echo'set proxy'
+echo "set proxy"
 export http_proxy=http://127.0.0.1:1087
 export https_proxy=$http_proxy
 
 echo "install brew!"
-# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 brew update
 brew install wget
 
