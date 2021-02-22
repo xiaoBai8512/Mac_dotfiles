@@ -17,7 +17,7 @@ brew install wget
 
 echo "Installing zshell..."
 brew install zsh --HEAD
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/bhilburn/powerlevel9k.git $HOME/.oh-my-zsh/custom/themes/powerlevel9k
 git clone https://github.com/zsh-users/zsh-autosuggestions  $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
@@ -52,7 +52,7 @@ brew install reattach-to-user-namespace
 
 brew tap homebrew/cask-fonts
 brew cask install font-hack-nerd-font
-brew cask install font-robotomono-nerd-font
+brew cask install font-roboto-mono-nerd-font
 brew cask install font-sourcecodepro-nerd-font
 brew cask install font-meslo-nerd-font font-meslo-nerd-font-mono font-mononoki-nerd-font 
 echo "Done!"
