@@ -1,6 +1,8 @@
 # proxy
-export http_proxy=http://127.0.0.1:1087
+export http_proxy=http://127.0.0.1:7890
 export https_proxy=$http_proxy
+#alias goproxy='export http_proxy=http://127.0.0.1:7890 https_proxy=http://127.0.0.1:7890'
+#alias disproxy='unset http_proxy https_proxy'
 
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_MODE='awesome-fontconfig'
