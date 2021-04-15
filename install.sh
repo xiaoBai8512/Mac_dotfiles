@@ -7,7 +7,7 @@ DOTFILES=$HOME/Mac_dotfiles
 # alias unsetproxy="unset ALL_PROXY"
 # setproxy
 echo "set proxy"
-export http_proxy=http://127.0.0.1:1087
+export http_proxy=http://127.0.0.1:7890
 export https_proxy=$http_proxy
 
 echo "install brew!"
@@ -16,7 +16,8 @@ brew update
 brew install wget
 
 echo "Installing zshell..."
-brew install zsh --HEAD
+# brew install zsh --HEAD
+brew install zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/bhilburn/powerlevel9k.git $HOME/.oh-my-zsh/custom/themes/powerlevel9k
 git clone https://github.com/zsh-users/zsh-autosuggestions  $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
