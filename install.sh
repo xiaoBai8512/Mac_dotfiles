@@ -31,7 +31,7 @@ echo "Done!"
 git clone https://github.com/Powerlevel9k/powerlevel9k.git $HOME/.oh-my-zsh/custom/themes/powerlevel9k
 git clone https://github.com/zsh-users/zsh-autosuggestions.git  $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-git clone https://github.com/tmux-plugins/tpm.git $HOME/.tmux/plugins/tpm
+# git clone https://github.com/tmux-plugins/tpm.git $HOME/.tmux/plugins/tpm
 chsh -s /bin/zsh `whoami`
 echo "Done!"
 
@@ -61,7 +61,7 @@ brew install yarn
 brew install vim --HEAD
 # brew install neovim
 # brew cask install macvim
-brew install tmux --HEAD
+# brew install tmux --HEAD
 brew install fzf --HEAD
 # brew install ack --HEAD
 # brew install ctags --HEAD
@@ -78,7 +78,7 @@ echo "Done!"
 
 echo "Sourcing origin files"
 source $HOME/.zshrc
-tmux source $HOME/.tmux.conf
+# tmux source $HOME/.tmux.conf
 echo "Done!"
 
 # echo "Pip install..."

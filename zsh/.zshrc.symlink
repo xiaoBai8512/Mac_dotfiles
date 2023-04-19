@@ -24,7 +24,6 @@ alias .="source"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 plugins=(
 git
-tmux
 gitignore
 svn
 brew
